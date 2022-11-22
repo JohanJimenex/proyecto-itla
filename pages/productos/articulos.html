@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pruyecto ITLA - Sistema de Inventario</title>
+
+    <link rel="stylesheet" href="../../css/main.css">
+
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- MENU -->
+        <div class="col-3">
+
+            <nav class="sidebar p-2">
+                <h3 class="text-light text-center p-3">
+                    Sistema de Inventario
+                </h3>
+                <ul class="main_side">
+                    <li class="active">
+                        <a href="../../index.html"> <i class="fas fa-home"></i> Inicio </a>
+                    </li>
+                    <li>
+                        <a href="#" id="1"> <i class="fas fa-th-large"></i> Productos
+                            <span class="fas fa-caret-down"></span>
+                        </a>
+                        <ul class="item-show-1">
+                            <li><a href="#">Articulos</a></li>
+                            <li><a href="./categoria.html">Categorías</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="2">Inventario
+                            <span class="fas fa-caret-down"></span>
+                        </a>
+                        <ul class="item-show-2">
+                            <li><a href="../inventario/registro-mercancia.html">Registro de mercancía</a></li>
+                            <li><a href="../inventario/entrada-mercancia.html">Entrada de mercancía</a></li>
+                            <li><a href="../inventario/salida-mercancia.html">Salida de mercancía</a></li>
+                            <li><a href="../inventario/reporte-mercancia.html">Reporte de mercancía</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" id="3">Usuarios
+                            <span class="fas fa-caret-down"></span>
+                        </a>
+                        <ul class="item-show-3">
+                            <li><a href="../usuarios/crear-usuario.html">Crear usuario</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- ARTICULOS -->
+        <div class="col-9">
+            <h4 class="text-center mt-5">Articulos</h4>
+
+            <div class="m-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio por Unidad</th>
+                            <th scope="col">Precio por docena</th>
+                            <th scope="col">Costo</th>
+                            <th scope="col">Categoría</th>
+                            <th scope="col">Suplidor</th>
+                            <th scope="col">Disponible</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>@mdo</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>@mdo</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../../javascript/side-bar.js"></script>
+        <script src="../../index.js"></script>
+
+        <script src="../../javascript/producto/articulos.js"></script>
+
+</body>
+
+</html>
