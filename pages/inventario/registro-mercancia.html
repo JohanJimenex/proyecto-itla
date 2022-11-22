@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pruyecto ITLA - Sistema de Inventario</title>
+    <title>Proyecto ITLA - Sistema de Inventario</title>
 
     <link rel="stylesheet" href="../../css/main.css">
 
@@ -62,7 +62,102 @@
         <!-- Registro Mercancia -->
         <div class="col-9">
 
-            <h1 class="text-center mt-5">Registro de Mercancía</h1>
+            <div class="container mt-5">
+
+                <form>
+                    <h5>Nuevo producto</h5>
+                    <h5> <b> Información Básica </b> </h5>
+                    <hr>
+
+                    <label for="nombre producto" class="">Nombre del producto</label>
+                    <input style="width: 250px;" id="nombre producto" class="form-control" type="text"
+                        placeholder="ej: Cocacola">
+
+                    <label for="Codigo de barra" class="mt-3">Código de barra</label>
+                    <input style="width: 250px;" id="Codigo de barra" class="form-control" type="text"
+                        placeholder="ej: 00001">
+
+                    <div class="form-floating mt-3" style="width: 300px;">
+                        <select class="form-select">
+                            <option selected>Categoría de producto</option>
+                            <option value="liquidos">Líquidos</option>
+                            <option value="embutidos">Embutidos</option>
+                            <option value="cereales">Cereales</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <label>Seleccione una categoría</label>
+                    </div>
+
+                    <br>
+
+                    <h5>Precio del producto</h5>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="mt-3">Pecio por caja</label>
+                            <input style="width: 250px;" class="form-control" type="number" placeholder="RD$ 0.00">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label class="mt-3">Pecio por unidad</label>
+                            <input style="width: 250px;" class="form-control" type="number" placeholder="RD$ 0.00">
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label class="mt-3">Costo</label>
+                            <input style="width: 250px;" class="form-control" type="number" placeholder="RD$ 0.00">
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <h5>Suplidores</h5>
+
+                    <div class="d-flex">
+                        <div>
+                            <label class="mt-3">Marca</label>
+                            <input style="width: 250px;" class="form-control" type="text" placeholder="ej: Induveca">
+                        </div>
+
+                        <div class="mx-3">
+                            <label class="mt-3">Modelo</label>
+                            <input style="width: 250px;" class="form-control" type="number" placeholder="ej: 2021">
+                        </div>
+                    </div>
+
+                    <div class="form-floating mt-3" style="width: 300px;">
+                        <select class="form-select">
+                            <option selected>Seleccionar...</option>
+                            <option value="liquidos">Induveca</option>
+                            <option value="embutidos">Cocacola</option>
+                            <option value="cereales">Pepsi</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                        <label>Seleccione un suplidor</label>
+                    </div>
+
+                    <br>
+
+                    <h5>Fecha de creación</h5>
+
+                    <input style="width: 250px;" class="form-control" type="date">
+
+                    <div class="form-floating mt-3" style="width: 300px;">
+                        <select class="form-select">
+                            <option selected>Estado de la mercancía</option>
+                            <option value="liquidos">Disponible</option>
+                            <option value="embutidos">Agotado</option>
+                        </select>
+                        <label>Seleccione un estado</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="btn btn-primary mt-4 w-25">Guardar</button>
+                    </div>
+
+                </form>
+
+            </div>
 
         </div>
 
